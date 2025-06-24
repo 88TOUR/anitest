@@ -7,7 +7,7 @@ const MainPage = ({ onStart }) => {
       <div className="main-container">
         <div className="main-content">
           <img 
-            src="/88tour_logo.png" 
+            src="/88tour_logo.jpg" 
             alt="여행 로고" 
             className="main-logo"
           />
