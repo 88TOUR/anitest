@@ -20,7 +20,7 @@ const MainPage = ({ onStart }) => {
             className="start-button"
             onClick={onStart}
           >
-            게임 시작하기
+            테스트 시작하기
           </button>
         </div>
       </div>
