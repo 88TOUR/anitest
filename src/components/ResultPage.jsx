@@ -49,7 +49,7 @@ const ResultPage = ({ result, onRestart }) => {
                       }}
                     ></div>
                   </div>
-                  <span className="score-value">{score}/12</span>
+                  <span className="score-value">{Math.round((score / 12) * 100)}%</span>
                 </div>
               ))}
             </div>
