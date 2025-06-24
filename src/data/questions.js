@@ -2,41 +2,41 @@ export const questions = [
   {
     id: 1,
     question: "여행 중 숙소를 선택한다면?",
-    optionA: "럭셔리 호텔에서 편안한 휴식",
-    optionB: "현지 게스트하우스에서 문화 체험",
+    optionA: "럭셔리 호텔에서 편안한 휴식하기",
+    optionB: "현지 게스트하우스 체험하기",
     category: "comfort"
   },
   {
     id: 2,
     question: "여행 계획을 세울 때 당신의 스타일은?",
-    optionA: "상세한 일정표와 예약 완료",
-    optionB: "대략적인 계획으로 즉흥적 여행",
+    optionA: "나는 파워 J! 철저한 계획적 여행",
+    optionB: "가서 정하면 돼~ 즉흥적 여행",
     category: "planning"
   },
   {
     id: 3,
-    question: "여행지에서 이동 수단은?",
-    optionA: "편리한 대중교통 이용",
-    optionB: "렌터카로 자유로운 여행",
+    question: "여행지에서 먼 거리를 이동할 때..",
+    optionA: "편리한 현지대중교통 이용",
+    optionB: "렌터카로 자유로운 이동",
     category: "freedom"
   },
   {
     id: 4,
-    question: "현지 음식에 대한 당신의 자세는?",
-    optionA: "새로운 현지 음식에 도전",
-    optionB: "익숙하고 안전한 음식 선택",
+    question: "여행지에서의 식사",
+    optionA: "여기까지 온거 현지 음식 먹어야지!",
+    optionB: "입맛에 안맞으면 어떡해.. 프랜차이즈 먹자!",
     category: "adventure"
   },
   {
     id: 5,
-    question: "여행 동반자에 대한 선호는?",
+    question: "당신의 여행은..",
     optionA: "혼자만의 조용한 시간",
     optionB: "친구들과 함께하는 즐거운 시간",
     category: "social"
   },
   {
     id: 6,
-    question: "관광지 선택 기준은?",
+    question: "여행 코스 짤 때 선택 기준은?",
     optionA: "유명한 관광지와 랜드마크",
     optionB: "현지인만 아는 숨겨진 명소",
     category: "exploration"
@@ -51,13 +51,13 @@ export const questions = [
   {
     id: 8,
     question: "여행 중 쇼핑에 대한 생각은?",
-    optionA: "기념품 쇼핑은 필수",
-    optionB: "경험이 최고의 기념품",
+    optionA: "내가 열심히 알바 뛴 것은 이 날을 위해.. 기념품 flex",
+    optionB: "여행은 가성비지! 경험이 최고의 기념품이야",
     category: "material"
   },
   {
     id: 9,
-    question: "여행 사진에 대한 당신의 스타일은?",
+    question: "여행 사진찍을 때 성향은?",
     optionA: "인증샷으로 추억 남기기",
     optionB: "눈으로 보고 마음에 담기",
     category: "documentation"
@@ -65,8 +65,8 @@ export const questions = [
   {
     id: 10,
     question: "여행 예산에 대한 접근법은?",
-    optionA: "알뜰하게 절약하며 여행",
-    optionB: "여행에는 투자를 아끼지 않기",
+    optionA: "여행은 가성비가 최고",
+    optionB: "돈 쓰려고 가는 것이 여행",
     category: "budget"
   },
   {
