@@ -8,8 +8,13 @@ padding: 20px;
 }
 
 .main-container {
-max-width: 600px;
-width: 100%;
+.main-container {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 }
 
 .main-content {
