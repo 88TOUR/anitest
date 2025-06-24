@@ -1,0 +1,139 @@
+.question-page {
+min-height: 100vh;
+background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.question-container {
+max-width: 800px;
+width: 100%;
+background: white;
+border-radius: 20px;
+padding: 40px;
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+animation: slideIn 0.6s ease-out;
+}
+
+.progress-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 40px;
+}
+
+.progress-bar {
+flex: 1;
+height: 8px;
+background: #e9ecef;
+border-radius: 4px;
+overflow: hidden;
+margin-right: 20px;
+}
+
+.progress-fill {
+height: 100%;
+background: linear-gradient(45deg, #74b9ff, #0984e3);
+border-radius: 4px;
+transition: width 0.5s ease;
+}
+
+.progress-text {
+font-weight: 600;
+color: #2d3436;
+font-size: 1.1em;
+}
+
+.question-content {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.question-title {
+font-size: 2em;
+color: #2c3e50;
+margin-bottom: 40px;
+font-weight: 600;
+line-height: 1.4;
+}
+
+.options {
+display: flex;
+flex-direction: column;
+gap: 20px;
+max-width: 600px;
+margin: 0 auto;
+}
+
+.option-button {
+display: flex;
+align-items: center;
+background: white;
+border: 3px solid #e9ecef;
+border-radius: 15px;
+padding: 25px 30px;
+cursor: pointer;
+transition: all 0.3s ease;
+text-align: left;
+}
+
+.option-button:hover {
+border-color: #74b9ff;
+transform: translateY(-2px);
+box-shadow: 0 10px 25px rgba(116, 185, 255, 0.3);
+}
+
+.option-label {
+background: linear-gradient(45deg, #74b9ff, #0984e3);
+color: white;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 700;
+font-size: 1.2em;
+margin-right: 20px;
+flex-shrink: 0;
+}
+
+.option-text {
+font-size: 1.1em;
+color: #2c3e50;
+line-height: 1.5;
+}
+
+.navigation {
+display: flex;
+justify-content: center;
+}
+
+.nav-button {
+background: #6c757d;
+color: white;
+border: none;
+padding: 12px 30px;
+border-radius: 25px;
+cursor: pointer;
+transition: all 0.3s ease;
+font-weight: 600;
+}
+
+.nav-button:hover {
+background: #5a6268;
+transform: translateY(-2px);
+}
+
+@keyframes slideIn {
+from {
+opacity: 0;
+transform: translateX(-50px);
+}
+to {
+opacity: 1;
+transform: translateX(0);
+}
+}

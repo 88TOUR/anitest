@@ -1,0 +1,208 @@
+.animation-page {
+min-height: 100vh;
+background: linear-gradient(to bottom, #87CEEB 0%, #98D8E8 50%, #F0F8FF 100%);
+position: relative;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.sky-background {
+width: 100%;
+height: 100%;
+position: relative;
+}
+
+/* 구름 애니메이션 */
+.clouds {
+position: absolute;
+background: white;
+border-radius: 50px;
+opacity: 0.8;
+animation: floatClouds 20s linear infinite;
+}
+
+.cloud1 {
+width: 100px;
+height: 40px;
+top: 20%;
+left: -100px;
+animation-delay: 0s;
+}
+
+.cloud2 {
+width: 150px;
+height: 60px;
+top: 15%;
+left: -150px;
+animation-delay: -7s;
+}
+
+.cloud3 {
+width: 80px;
+height: 30px;
+top: 25%;
+left: -80px;
+animation-delay: -14s;
+}
+
+.clouds::before,
+.clouds::after {
+content: '';
+position: absolute;
+background: white;
+border-radius: 50px;
+}
+
+.clouds::before {
+width: 50px;
+height: 50px;
+top: -25px;
+left: 10px;
+}
+
+.clouds::after {
+width: 60px;
+height: 60px;
+top: -35px;
+right: 10px;
+}
+
+/* 비행기 애니메이션 */
+.airplane {
+position: absolute;
+top: 50%;
+left: -200px;
+transform: translateY(-50%);
+animation: flyAcross 3s ease-in-out forwards;
+}
+
+.airplane-body {
+width: 80px;
+height: 20px;
+background: #333;
+border-radius: 0 20px 20px 0;
+position: relative;
+z-index: 3;
+}
+
+.airplane-wing {
+width: 60px;
+height: 8px;
+background: #555;
+position: absolute;
+top: 6px;
+left: 15px;
+border-radius: 4px;
+z-index: 2;
+}
+
+.airplane-tail {
+width: 20px;
+height: 12px;
+background: #333;
+position: absolute;
+top: 4px;
+left: -10px;
+border-radius: 6px 0 0 6px;
+z-index: 2;
+}
+
+.airplane-smoke {
+width: 100px;
+height: 6px;
+background: rgba(255, 255, 255, 0.6);
+position: absolute;
+top: 7px;
+left: -120px;
+border-radius: 3px;
+animation: smokeTrail 3s ease-in-out forwards;
+}
+
+/* 로딩 텍스트 */
+.loading-text {
+position: absolute;
+bottom: 30%;
+left: 50%;
+transform: translateX(-50%);
+text-align: center;
+color: #2c3e50;
+}
+
+.loading-text h2 {
+font-size: 2em;
+margin-bottom: 20px;
+font-weight: 600;
+}
+
+.loading-dots {
+font-size: 2em;
+font-weight: bold;
+}
+
+.loading-dots span {
+animation: dotPulse 1.5s infinite;
+}
+
+.loading-dots span:nth-child(2) {
+animation-delay: 0.3s;
+}
+
+.loading-dots span:nth-child(3) {
+animation-delay: 0.6s;
+}
+
+/* 애니메이션 키프레임 */
+@keyframes floatClouds {
+0% {
+transform: translateX(0);
+}
+100% {
+transform: translateX(calc(100vw + 200px));
+}
+}
+
+@keyframes flyAcross {
+0% {
+left: -200px;
+transform: translateY(-50%) rotate(0deg);
+}
+20% {
+transform: translateY(-60px) rotate(5deg);
+}
+50% {
+transform: translateY(-40px) rotate(-2deg);
+}
+80% {
+transform: translateY(-50px) rotate(3deg);
+}
+100% {
+left: calc(100vw + 200px);
+transform: translateY(-50%) rotate(0deg);
+}
+}
+
+@keyframes smokeTrail {
+0% {
+opacity: 1;
+width: 0;
+}
+50% {
+opacity: 0.8;
+width: 100px;
+}
+100% {
+opacity: 0.3;
+width: 150px;
+}
+}
+
+@keyframes dotPulse {
+0%, 100% {
+opacity: 0.3;
+}
+50% {
+opacity: 1;
+}
+}
