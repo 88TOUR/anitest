@@ -27,9 +27,9 @@ animation: fadeInUp 0.8s ease-out;
 }
 
 .main-logo {
-width: 160px;
+width: 150px;
 height: auto;
-margin-bottom: 25px;
+margin-bottom: 15px;
 animation: float 3s ease-in-out infinite;
 }
 
