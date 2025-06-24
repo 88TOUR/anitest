@@ -7,14 +7,14 @@ const MainPage = ({ onStart }) => {
       <div className="main-container">
         <div className="main-content">
           <img 
-            src="/airplane-logo.png" 
+            src="/88tour_logo.png" 
             alt="여행 로고" 
             className="main-logo"
           />
-          <h1 className="main-title">여행 성향 파악 게임</h1>
+          <h1 className="main-title">나만의 여행 성향 테스트</h1>
           <p className="main-description">
-            12개의 질문을 통해<br />
-            당신만의 여행 스타일을 찾아보세요!
+            나의 여행 유형을 통해<br />
+            나만의 여행을 디자인하라!
           </p>
           <button 
             className="start-button"
