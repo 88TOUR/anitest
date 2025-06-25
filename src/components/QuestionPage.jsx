@@ -21,7 +21,8 @@ const QuestionPage = ({
             ></div>
           </div>
           <span className="progress-text">
-            {questionNumber} / {totalQuestions}
+            <span className="progress-current">{questionNumber}</span>
+            <span className="progress-total"> / {totalQuestions}</span>
           </span>
         </div>
 

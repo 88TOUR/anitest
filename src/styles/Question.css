@@ -41,10 +41,26 @@ transition: width 0.5s ease;
 }
 
 .progress-text {
+font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', Arial, sans-serif;
 font-weight: 600;
 color: #2d3436;
 font-size: 1.1em;
 }
+
+.progress-current {
+  color: #7c9ae5;           /* 강조 색상 */
+  font-size: 2rem;          /* 더 크게 */
+  font-weight: bold;
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif; /* 원하는 폰트 지정 */
+  margin-right: 0.1em;
+}
+
+.progress-total {
+  color: #999999;           /* 연한 색상 */
+  font-size: 1.1rem;        /* 작게 */
+  font-family: inherit;
+}
+
 
 .question-content {
 text-align: center;
