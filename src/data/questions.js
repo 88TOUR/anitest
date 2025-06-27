@@ -15,78 +15,144 @@ export const questions = [
   {
     id: 2,
     question: "해외로 여행을 갈 때",
-    optionA: "아는 만큼 보인다. 사전 조사하기",
-    optionB: "맨땅에 헤딩하기",
+    optionA: {
+      text: "아는 만큼 보인다. 사전 조사하기",
+      image: "/optionA2.png"
+    },
+    optionB: {
+      text: "맨땅에 헤딩하기",
+      image: "/optionB2.png"
+    },
     category: "planning"
   },
   {
     id: 3,
     question: "여행지에서 먼 거리를 이동할 때",
-    optionA: "편리한 현지대중교통 이용",
-    optionB: "렌터카로 자유로운 이동",
+    optionA: {
+      text: "편리한 현지대중교통 이용",
+      image: "/optionA3.png"
+    },
+    optionB: {
+      text: "렌터카로 자유로운 이동",
+      image: "/optionB3.png"
+    },
     category: "freedom"
   },
   {
     id: 4,
     question: "친구가 당장 내일 여행 떠나자고 한다면?",
-    optionA: "내일...? 늦잠자고 쉬려고 했는데...",
-    optionB: "너무 좋아!! 진행시켜~~",
+    optionA: {
+      text: "내일...? 늦잠자고 쉬려고 했는데...",
+      image: "/optionA4.png"
+    },
+    optionB: {
+      text: "너무 좋아!! 진행시켜~~",
+      image: "/optionB4.png"
+    },
     category: "adventure"
   },
   {
     id: 5,
     question: "여행을 누구랑 가지?",
-    optionA: "동기들과 다 같이 여행",
-    optionB: "나 홀로 여행",
+    optionA: {
+      text: "동기들과 다 같이 여행",
+      image: "/optionA5.png"
+    },
+    optionB: {
+      text: "나 홀로 여행",
+      image: "/optionB5.png"
+    },
     category: "social"
   },
   {
     id: 6,
     question: "친구랑 여행계획을 짜는데 뭔가 심상치 않다...",
-    optionA: "엑셀로 1분단위 계획짜는 친구",
-    optionB: "뉸뉴난나 그냥 가는거지 뭐~",
+    optionA: {
+      text: "엑셀로 1분단위 계획짜는 친구",
+      image: "/optionA6.png"
+    },
+    optionB: {
+      text: "뉸뉴난나 그냥 가는거지 뭐~",
+      image: "/optionB6.png"
+    },
     category: "exploration"
   },
   {
     id: 7,
     question: "숙소가 애매하네...",
-    optionA: "그냥 찜질방에서 자자",
-    optionB: "여행까지 왔는데 풀빌라는 가야지!",
+    optionA: {
+      text: "그냥 찜질방에서 자자",
+      image: "/optionA7.png"
+    },
+    optionB: {
+      text: "여행까지 왔는데 풀빌라는 가야지!",
+      image: "/optionB7.png"
+    },
     category: "activity"
   },
   {
     id: 8,
     question: "한 달 살기 요즘 유행하네.. 나도 해볼까?",
-    optionA: "제대로 즐기려면 최소 2주는 가야지!",
-    optionB: "그래도 한 달은 좀.. 짧고 굵게 다녀오자!",
+    optionA: {
+      text: "제대로 즐기려면 최소 2주는 가야지!",
+      image: "/optionA8.png"
+    },
+    optionB: {
+      text: "그래도 한 달은 좀.. 짧고 굵게 다녀오자!",
+      image: "/optionB8.png"
+    },
     category: "material"
   },
   {
     id: 9,
     question: "여행가서 친구와 싸웠을 때",
-    optionA: "지금 끝장을 보자.",
-    optionB: "그래도 즐겁게 여행왔는데.. 나중에 생각하자",
+    optionA: {
+      text: "지금 끝장을 보자.",
+      image: "/optionA9.png"
+    },
+    optionB: {
+      text: "그래도 즐겁게 여행왔는데.. 나중에 생각하자",
+      image: "/optionB9.png"
+    },
     category: "documentation"
   },
   {
     id: 10,
     question: "연차내고 신나게 여행을 왔는데, 직장상사에게 전화가 왔다.",
-    optionA: "모른 척한다",
-    optionB: "일은 일이니까 받는다",
+    optionA: {
+      text: "모른 척한다",
+      image: "/optionA10.png"
+    },
+    optionB: {
+      text: "일은 일이니까 받는다",
+      image: "/optionB10.png"
+    },
     category: "budget"
   },
   {
     id: 11,
     question: "여행을 간다면",
-    optionA: "여유.. 휴식.. 낭만.. 여행은 이거지..",
-    optionB: "내 몸이 닳더라도 뽕은 뽑자",
+    optionA: {
+      text: "여유.. 휴식.. 낭만.. 여행은 이거지..",
+      image: "/optionA11.png"
+    },
+    optionB: {
+      text: "내 몸이 닳더라도 뽕은 뽑자",
+      image: "/optionB11.png"
+    },
     category: "timing"
   },
   {
     id: 12,
     question: "여행이 모두 끝나고 내 방 침대에 누워있을 때.. 드는 생각은?",
-    optionA: "너무 행복하다.. 나중에 또 가야지~",
-    optionB: "다녀오는거 좋은데 할게 쌓여있네..",
+    optionA: {
+      text: "너무 행복하다.. 나중에 또 가야지~",
+      image: "/optionA12.png"
+    },
+    optionB: {
+      text: "다녀오는거 좋은데 할게 쌓여있네..",
+      image: "/optionB12.png"
+    },
     category: "culture"
   }
 ];
