@@ -1,86 +1,86 @@
 export const questions = [
   {
     id: 1,
-    question: "여행 중 숙소를 선택한다면?",
-    optionA: "럭셔리 호텔에서 편안한 휴식하기",
-    optionB: "현지 게스트하우스 체험하기",
+    question: "방학 때 여행을 간다면?",
+    optionA: "멀리 갈 필요 없지! 국내로 가자",
+    optionB: "여행은 chill해야지! 해외로 가자",
     category: "comfort"
   },
   {
     id: 2,
-    question: "여행 계획을 세울 때 당신의 스타일은?",
-    optionA: "나는 파워 J! 철저한 계획적 여행",
-    optionB: "가서 정하면 돼~ 즉흥적 여행",
+    question: "해외로 여행을 갈 때",
+    optionA: "아는 만큼 보인다. 사전 조사하기",
+    optionB: "맨땅에 헤딩하기",
     category: "planning"
   },
   {
     id: 3,
-    question: "여행지에서 먼 거리를 이동할 때..",
+    question: "여행지에서 먼 거리를 이동할 때",
     optionA: "편리한 현지대중교통 이용",
     optionB: "렌터카로 자유로운 이동",
     category: "freedom"
   },
   {
     id: 4,
-    question: "여행지에서의 식사",
-    optionA: "여기까지 온거 현지 음식 먹어야지!",
-    optionB: "입맛에 안맞으면 어떡해.. 프랜차이즈 먹자!",
+    question: "친구가 당장 내일 여행 떠나자고 한다면?",
+    optionA: "내일...? 늦잠자고 쉬려고 했는데...",
+    optionB: "너무 좋아!! 진행시켜~~",
     category: "adventure"
   },
   {
     id: 5,
-    question: "당신의 여행은..",
-    optionA: "혼자만의 조용한 시간",
-    optionB: "친구들과 함께하는 즐거운 시간",
+    question: "여행을 누구랑 가지?",
+    optionA: "동기들과 다 같이 여행",
+    optionB: "나 홀로 여행",
     category: "social"
   },
   {
     id: 6,
-    question: "여행 코스 짤 때 선택 기준은?",
-    optionA: "유명한 관광지와 랜드마크",
-    optionB: "현지인만 아는 숨겨진 명소",
+    question: "친구랑 여행계획을 짜는데 뭔가 심상치 않다...",
+    optionA: "엑셀로 1분단위 계획짜는 친구",
+    optionB: "뉸뉴난나 그냥 가는거지 뭐~",
     category: "exploration"
   },
   {
     id: 7,
-    question: "여행지에서의 활동 성향은?",
-    optionA: "스포츠와 액티비티 체험",
-    optionB: "카페에서 여유로운 휴식",
+    question: "숙소가 애매하네...",
+    optionA: "그냥 찜질방에서 자자",
+    optionB: "여행까지 왔는데 풀빌라는 가야지!",
     category: "activity"
   },
   {
     id: 8,
-    question: "여행 중 쇼핑에 대한 생각은?",
-    optionA: "내가 열심히 알바 뛴 것은 이 날을 위해.. 기념품 flex",
-    optionB: "여행은 가성비지! 경험이 최고의 기념품이야",
+    question: "한 달 살기 요즘 유행하네.. 나도 해볼까?",
+    optionA: "제대로 즐기려면 최소 2주는 가야지!",
+    optionB: "그래도 한 달은 좀.. 짧고 굵게 다녀오자!",
     category: "material"
   },
   {
     id: 9,
-    question: "여행 사진찍을 때 성향은?",
-    optionA: "인증샷으로 추억 남기기",
-    optionB: "눈으로 보고 마음에 담기",
+    question: "여행가서 친구랑 갈등이 생긴다면?",
+    optionA: "끝장을 보자.",
+    optionB: "그래도 즐겁게 여행왔는데.. 나중에 생각하자",
     category: "documentation"
   },
   {
     id: 10,
-    question: "여행 예산에 대한 접근법은?",
-    optionA: "여행은 가성비가 최고",
-    optionB: "돈 쓰려고 가는 것이 여행",
+    question: "연차내고 신나게 여행을 왔는데, 직장상사에게 전화가 왔다.",
+    optionA: "모른 척한다",
+    optionB: "일은 일이니까 받는다",
     category: "budget"
   },
   {
     id: 11,
-    question: "선호하는 여행 시간대는?",
-    optionA: "이른 아침 일출과 함께",
-    optionB: "늦은 밤 야경과 함께",
+    question: "여행을 간다면",
+    optionA: "여유.. 휴식.. 낭만.. 여행은 이거지..",
+    optionB: "내 몸이 닳더라도 뽕은 뽑자",
     category: "timing"
   },
   {
     id: 12,
-    question: "문화 체험 방식은?",
-    optionA: "박물관과 역사 유적지 탐방",
-    optionB: "현지 축제와 이벤트 참여",
+    question: "여행이 모두 끝나고 내 방 침대에 누워있을 때.. 드는 생각은?",
+    optionA: "너무 행복하다.. 나중에 또 가야지~",
+    optionB: "다녀오는거 좋은데 할게 쌓여있네..",
     category: "culture"
   }
 ];
