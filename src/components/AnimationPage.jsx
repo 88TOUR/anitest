@@ -18,13 +18,15 @@ const AnimationPage = () => {
         
         {/* 로딩 텍스트 */}
         <div className="loading-text">
-          <h2>여행 코스 분석 중</h2>
+          <span>여행지를 찾고 있어요</span>
+          <span className="loading-dots">
             <span className="dot"></span>
             <span className="dot"></span>
             <span className="dot"></span>
-          </div>
+         </span>
         </div>
       </div>
+    </div>
   );
 };
 
