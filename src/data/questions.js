@@ -57,8 +57,8 @@ export const questions = [
   },
   {
     id: 9,
-    question: "여행가서 친구랑 갈등이 생긴다면?",
-    optionA: "끝장을 보자.",
+    question: "여행가서 친구와 싸웠을 때",
+    optionA: "지금 끝장을 보자.",
     optionB: "그래도 즐겁게 여행왔는데.. 나중에 생각하자",
     category: "documentation"
   },
