@@ -125,8 +125,11 @@ animation: smokeTrail 3s ease-in-out forwards;
   font-weight: 500;
   /* 텍스트 그라데이션 */
   background: linear-gradient(135deg, #4a90e2, #357ABD);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;                /* 표준 속성도 같이 써주면 좋음 */
+    -webkit-text-fill-color: transparent;
+    color: transparent;                   /* 표준 속성도 같이 써주면 좋음 */
+
   /* 텍스트 그림자 */
   text-shadow: 0 0 8px rgba(53, 122, 189, 0.8);
 }
