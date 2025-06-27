@@ -18,7 +18,7 @@ const AnimationPage = () => {
         
         {/* 로딩 텍스트 */}
         <div className="loading-text">
-          <span>여행지를 찾고 있어요</span>
+          <h2>여행 코스 분석중</h2>
           <span className="loading-dots">
             <span className="dot"></span>
             <span className="dot"></span>
