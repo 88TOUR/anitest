@@ -1,86 +1,137 @@
 .main-page {
-min-height: 100vh;
-background: linear-gradient(135deg, #7c94ff 0%, #ff67e8 100%);
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 20px;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: linear-gradient(135deg, #b3e0ff 0%, #e0f7fa 100%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-.main-container {
-.main-container {
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-}
-
+/* 중앙 컨텐츠 */
 .main-content {
-background: white;
-border-radius: 20px;
-padding: 60px 40px;
-text-align: center;
-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-animation: fadeInUp 0.8s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  text-align: center;
+  box-shadow: none;
+  animation: none;
 }
 
 .main-logo {
-width: 150px;
-height: auto;
-margin-bottom: 15px;
-animation: float 3s ease-in-out infinite;
+  width: 110px;
+  height: 110px;
+  margin-bottom: 28px;
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.13));
 }
 
 .main-title {
-font-size: 2.0em;
-color: #2c3e50;
-margin-bottom: 20px;
-font-weight: 700;
+  font-size: 2.3rem;
+  color: #1976d2;
+  margin-bottom: 18px;
+  font-weight: 800;
+  text-shadow: 0 2px 12px rgba(180,220,255,0.22);
 }
 
 .main-description {
-font-size: 1.2em;
-color: #7f8c8d;
-margin-bottom: 40px;
-line-height: 1.6;
+  font-size: 1.15rem;
+  color: #1976d2;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 0 1px 8px rgba(180,220,255,0.15);
+  line-height: 1.6;
 }
 
 .start-button {
-background: linear-gradient(45deg, #7c94ff, #ff67e8);
-color: white;
-border: none;
-padding: 18px 50px;
-font-size: 1.2em;
-border-radius: 50px;
-cursor: pointer;
-transition: all 0.3s ease;
-font-weight: 600;
-box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+  background: #1976d2;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 18px 48px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.13);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
 }
-
 .start-button:hover {
-transform: translateY(-3px);
-box-shadow: 0 15px 35px rgba(102, 126, 234, 0.6);
+  background: #2196f3;
+  transform: translateY(-2px) scale(1.04);
 }
 
-@keyframes fadeInUp {
-from {
-opacity: 0;
-transform: translateY(30px);
+/* 구름 애니메이션 */
+.cloud {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 1;
+  filter: blur(1px);
 }
-to {
-opacity: 1;
-transform: translateY(0);
+.cloud1 {
+  width: 120px; height: 60px;
+  top: 12%; left: 8%;
+  animation: cloudMove1 22s linear infinite;
 }
+.cloud2 {
+  width: 180px; height: 90px;
+  top: 26%; right: 10%;
+  animation: cloudMove2 28s linear infinite;
+}
+.cloud3 {
+  width: 90px; height: 45px;
+  bottom: 14%; left: 20%;
+  animation: cloudMove3 18s linear infinite;
+}
+.cloud4 {
+  width: 140px; height: 70px;
+  bottom: 10%; right: 15%;
+  animation: cloudMove4 24s linear infinite;
+}
+@keyframes cloudMove1 {
+  0% { left: 8%; }
+  100% { left: 92%; }
+}
+@keyframes cloudMove2 {
+  0% { right: 10%; }
+  100% { right: 95%; }
+}
+@keyframes cloudMove3 {
+  0% { left: 20%; }
+  100% { left: 80%; }
+}
+@keyframes cloudMove4 {
+  0% { right: 15%; }
+  100% { right: 85%; }
 }
 
-@keyframes float {
-0%, 100% {
-transform: translateY(0px);
+/* 비행기 애니메이션 (삼각형 모양) */
+.airplane {
+  position: absolute;
+  width: 48px; height: 48px;
+  top: 60%; left: -60px;
+  z-index: 2;
+  background: none;
+  animation: planeFly 10s linear infinite;
 }
-50% {
-transform: translateY(-10px);
+.airplane::before {
+  content: "";
+  display: block;
+  width: 0; height: 0;
+  border-left: 48px solid #1976d2;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-radius: 6px;
 }
+@keyframes planeFly {
+  0% { left: -60px; top: 60%; }
+  60% { left: 60vw; top: 40%; }
+  100% { left: 110vw; top: 22%; }
 }
