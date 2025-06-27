@@ -20,9 +20,9 @@ const AnimationPage = () => {
         <div className="loading-text">
           <h2>여행지를 찾고 있어요...</h2>
           <div className="loading-dots">
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
+            <span className="dot"></span>
+            <span className="dot"></span>
+            <span className="dot"></span>
           </div>
         </div>
       </div>
