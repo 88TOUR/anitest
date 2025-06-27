@@ -14,7 +14,7 @@ const MainPage = ({ onStart }) => (
     {/* 중앙 컨텐츠 */}
     <div className="main-content">
       <img 
-        src="/88tour_logo.jpg" 
+        src="/88tour_logo_colored.png" 
         alt="여행 로고"
         className="main-logo"
       />
