@@ -8,8 +8,6 @@ const MainPage = ({ onStart }) => (
     <div className="cloud cloud2"></div>
     <div className="cloud cloud3"></div>
     <div className="cloud cloud4"></div>
-    {/* 비행기 */}
-    <div className="airplane"></div>
 
     {/* 중앙 컨텐츠 */}
     <div className="main-content">
