@@ -72,15 +72,24 @@ right: 10px;
 /* 비행기 애니메이션 */
 .airplane {
 position: absolute;
+width: 64px;      /* 원하는 고정 크기 */
+height: 64px;
 top: 50%;
-left: -200px;
+left: -100px;     /* 화면 밖 시작 */
 transform: translateY(-50%);
 animation: flyAcross 3s ease-in-out forwards;
 }
 
+.airplane img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
 .airplane-img {
-width: 50%;
-height: 50%;
+width: 100%;
+height: 100%;
 object-fit: contain;
   /* 필요하다면 transform: rotate(-10deg); 등도 추가 가능 */
 }
@@ -141,31 +150,21 @@ transform: translateX(calc(100vw + 200px));
 
 @keyframes flyAcross {
   0% {
-    left: -200px;
+    left: -100px;
     opacity: 0;
-    transform: translateY(-50%) rotate(0deg);
   }
   10% {
     opacity: 1;
-  }
-  20% {
-    transform: translateY(-60px) rotate(5deg);
-  }
-  50% {
-    transform: translateY(-40px) rotate(-2deg);
-  }
-  80% {
-    transform: translateY(-50px) rotate(3deg);
   }
   90% {
     opacity: 1;
   }
   100% {
-    left: calc(100vw + 200px);
+    left: calc(100vw + 100px);
     opacity: 0;
-    transform: translateY(-50%) rotate(0deg);
   }
 }
+
 
 
 @keyframes smokeTrail {
