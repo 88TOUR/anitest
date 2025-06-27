@@ -12,9 +12,7 @@ const AnimationPage = () => {
         
         {/* 비행기 */}
         <div className="airplane">
-          <div className="airplane-body"></div>
-          <div className="airplane-wing"></div>
-          <div className="airplane-tail"></div>
+          <img src="/myplane.png" alt="비행기" className="airplane-img" />
           <div className="airplane-smoke"></div>
         </div>
         

@@ -78,35 +78,11 @@ transform: translateY(-50%);
 animation: flyAcross 3s ease-in-out forwards;
 }
 
-.airplane-body {
-width: 80px;
-height: 20px;
-background: #333;
-border-radius: 0 20px 20px 0;
-position: relative;
-z-index: 3;
-}
-
-.airplane-wing {
-width: 60px;
-height: 8px;
-background: #555;
-position: absolute;
-top: 6px;
-left: 15px;
-border-radius: 4px;
-z-index: 2;
-}
-
-.airplane-tail {
-width: 20px;
-height: 12px;
-background: #333;
-position: absolute;
-top: 4px;
-left: -10px;
-border-radius: 6px 0 0 6px;
-z-index: 2;
+.airplane-img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+  /* 필요하다면 transform: rotate(-10deg); 등도 추가 가능 */
 }
 
 .airplane-smoke {
