@@ -122,8 +122,15 @@ animation: smokeTrail 3s ease-in-out forwards;
   justify-content: center;
   white-space: nowrap;         /* 줄바꿈 방지 */
   gap: 3px;                    /* 텍스트와 점 사이 간격 */
-  font-weight: 550;
+  font-weight: 600;
+  /* 텍스트 그라데이션 */
+  background: linear-gradient(135deg, #4a90e2, #357ABD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* 텍스트 그림자 */
+  text-shadow: 0 0 8px rgba(53, 122, 189, 0.8);
 }
+
 .dot {
   display: inline-block;
   width: 12px;
