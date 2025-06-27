@@ -27,7 +27,7 @@ const QuestionPage = ({
         </div>
 
         {/* 질문 내용 */}
-        <div className="question-content">
+         <div className="question-content">
           <h2 className="question-title">{question.question}</h2>
           
           <div className="options">
@@ -35,16 +35,24 @@ const QuestionPage = ({
               className="option-button option-a"
               onClick={() => onAnswer('A')}
             >
-              <span className="option-label">A</span>
-              <span className="option-text">{question.optionA}</span>
+              <img
+                src={question.optionA.image}
+                alt="선택지 A 이미지"
+                className="option-img"
+              />
+              <span className="option-text">{question.optionA.text}</span>
             </button>
             
             <button 
               className="option-button option-b"
               onClick={() => onAnswer('B')}
             >
-              <span className="option-label">B</span>
-              <span className="option-text">{question.optionB}</span>
+              <img
+                src={question.optionB.image}
+                alt="선택지 B 이미지"
+                className="option-img"
+              />
+              <span className="option-text">{question.optionB.text}</span>
             </button>
           </div>
         </div>

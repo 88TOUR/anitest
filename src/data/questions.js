@@ -2,8 +2,14 @@ export const questions = [
   {
     id: 1,
     question: "방학 때 여행을 간다면?",
-    optionA: "멀리 갈 필요 없지! 국내로 가자",
-    optionB: "여행은 chill해야지! 해외로 가자",
+    optionA: {
+      text: "멀리 갈 필요 없지! 국내로 가자",
+      image: "/optionA1.png"
+    },
+    optionB: {
+      text: "여행은 chill해야지! 해외로 가자",
+      image: "/optionB1.png"
+    },
     category: "comfort"
   },
   {

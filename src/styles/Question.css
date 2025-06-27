@@ -101,19 +101,12 @@ transform: translateY(-2px);
 box-shadow: 0 10px 25px rgba(116, 185, 255, 0.3);
 }
 
-.option-label {
-background: linear-gradient(45deg, #74b9ff, #0984e3);
-color: white;
-width: 40px;
-height: 40px;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-font-weight: 700;
-font-size: 1.2em;
-margin-right: 20px;
-flex-shrink: 0;
+.option-img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  margin-right: 20px;
+  flex-shrink: 0;
 }
 
 .option-text {
