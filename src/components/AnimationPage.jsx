@@ -12,8 +12,8 @@ const AnimationPage = () => {
         
         {/* 비행기 */}
         <div className="airplane">
+          <div className="smoke-trail"></div>
           <img src="/myplane.png" alt="비행기" className="airplane-img" />
-          <div className="airplane-smoke"></div>
         </div>
         
         {/* 로딩 텍스트 */}

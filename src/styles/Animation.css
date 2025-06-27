@@ -94,14 +94,16 @@ object-fit: contain;
   /* 필요하다면 transform: rotate(-10deg); 등도 추가 가능 */
 }
 
-.airplane-smoke {
-width: 100px;
-height: 6px;
-background: rgba(255, 255, 255, 0.6);
+.smoke-trail {
 position: absolute;
-top: 7px;
-left: -120px;
-border-radius: 3px;
+left: -140px;   /* 비행기 뒤쪽에 오도록 조정 */
+top: 50%;
+transform: translateY(-50%);
+height: 16px;   /* 연기 굵기 */
+background: linear-gradient(90deg, rgba(200,200,200,0.5) 0%, rgba(255,255,255,0) 100%);
+border-radius: 8px;
+pointer-events: none;
+z-index: 1;
 animation: smokeTrail 3s ease-in-out forwards;
 }
 
