@@ -113,15 +113,16 @@ animation: smokeTrail 3s ease-in-out forwards;
   bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #1976d2;
   letter-spacing: 1px;
   z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 0 10px;
+  white-space: nowrap;         /* 줄바꿈 방지 */
+  gap: 3px;                    /* 텍스트와 점 사이 간격 */
+  font-weight: 600;
 }
 .dot {
   display: inline-block;
@@ -130,17 +131,17 @@ animation: smokeTrail 3s ease-in-out forwards;
   background: linear-gradient(135deg, #4a90e2, #357ABD);
   border-radius: 50%;
   box-shadow: 0 0 8px rgba(53, 122, 189, 0.8);
-  margin: 0 4px;
+  margin-left: 2px;
   animation: dotPulse 1.2s infinite;
+  vertical-align: middle;
 }
-.dot:nth-child(2) { animation-delay: 0.3s; }
-.dot:nth-child(3) { animation-delay: 0.6s; }
+.dot:nth-child(2) { animation-delay: 0.2s; }
+.dot:nth-child(3) { animation-delay: 0.4s; }
 
 @keyframes dotPulse {
   0%, 100% { opacity: 0.4; transform: scale(0.8); }
   50% { opacity: 1; transform: scale(1.2); }
 }
-
 
 
 
