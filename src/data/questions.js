@@ -10,7 +10,7 @@ export const questions = [
       text: "여행은 chill해야지! 해외로 가자",
       image: "/optionB1.png"
     },
-    category: "comfort"
+    category: "q1"
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const questions = [
       text: "맨땅에 헤딩하기",
       image: "/optionB2.png"
     },
-    category: "planning"
+    category: "q2"
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const questions = [
       text: "렌터카로 자유로운 이동",
       image: "/optionB3.png"
     },
-    category: "freedom"
+    category: "q3"
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ export const questions = [
       text: "너무 좋아!! 진행시켜~~",
       image: "/optionB4.png"
     },
-    category: "adventure"
+    category: "q4"
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ export const questions = [
       text: "나 홀로 여행",
       image: "/optionB5.png"
     },
-    category: "social"
+    category: "q5"
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ export const questions = [
       text: "뉸뉴난나 그냥 가는거지 뭐~",
       image: "/optionB6.png"
     },
-    category: "exploration"
+    category: "q6"
   },
   {
     id: 7,
@@ -88,7 +88,7 @@ export const questions = [
       text: "여행까지 왔는데 풀빌라는 가야지!",
       image: "/optionB7.png"
     },
-    category: "activity"
+    category: "q7"
   },
   {
     id: 8,
@@ -101,7 +101,7 @@ export const questions = [
       text: "그래도 한 달은 좀.. 짧고 굵게 다녀오자!",
       image: "/optionB8.png"
     },
-    category: "material"
+    category: "q8"
   },
   {
     id: 9,
@@ -114,7 +114,7 @@ export const questions = [
       text: "그래도 즐겁게 여행왔는데.. 나중에 생각하자",
       image: "/optionB9.png"
     },
-    category: "documentation"
+    category: "q9"
   },
   {
     id: 10,
@@ -127,7 +127,7 @@ export const questions = [
       text: "일은 일이니까 받는다",
       image: "/optionB10.png"
     },
-    category: "budget"
+    category: "q10"
   },
   {
     id: 11,
@@ -140,7 +140,7 @@ export const questions = [
       text: "내 몸이 닳더라도 뽕은 뽑자",
       image: "/optionB11.png"
     },
-    category: "timing"
+    category: "q11"
   },
   {
     id: 12,
@@ -153,7 +153,7 @@ export const questions = [
       text: "다녀오는거 좋은데 할게 쌓여있네..",
       image: "/optionB12.png"
     },
-    category: "culture"
+    category: "q12"
   }
 ];
 
@@ -218,80 +218,92 @@ export const analyzeResults = (answers) => {
     // 각 질문의 카테고리와 선택에 따라 점수 부여
     if (answer === 'A') {
       switch (question.category) {
-        case 'comfort':
+        case 'q1':
           scores.relaxer += 1;
-          break;
-        case 'planning':
-          scores.culturalist += 1;
-          break;
-        case 'freedom':
-          scores.relaxer += 1;
-          break;
-        case 'adventure':
-          scores.adventurer += 1;
-          break;
-        case 'social':
           scores.free_spirit += 1;
           break;
-        case 'exploration':
-          scores.culturalist += 1;
-          break;
-        case 'activity':
-          scores.adventurer += 1;
-          break;
-        case 'material':
+        case 'q2':
           scores.relaxer += 1;
           break;
-        case 'documentation':
-          scores.culturalist += 1;
-          break;
-        case 'budget':
+        case 'q3':
+          scores.relaxer += 1;
           scores.free_spirit += 1;
           break;
-        case 'timing':
-          scores.adventurer += 1;
+        case 'q4':
+          scores.relaxer += 1;
           break;
-        case 'culture':
+        case 'q5':
           scores.culturalist += 1;
+          scores.free_spirit += 1;
+          break;
+        case 'q6':
+          scores.adventurer += 1;
+          scores.culturalist += 1;
+          break;
+        case 'q7':
+          scores.adventurer += 1;
+          scores.culturalist += 1;
+          break;
+        case 'q8':
+          scores.relaxer += 0;
+          break;
+        case 'q9':
+          scores.adventurer += 1;
+          scores.culturalist += 1;
+          break;
+        case 'q10':
+          scores.relaxer += 1;
+          break;
+        case 'q11':
+          scores.relaxer += 1;
+          scores.free_spirit += 1;
+          break;
+        case 'q12':
+          scores.relaxer += 1;
           break;
       }
     } else { // answer === 'B'
       switch (question.category) {
-        case 'comfort':
+        case 'q1':
           scores.adventurer += 1;
-          break;
-        case 'planning':
-          scores.free_spirit += 1;
-          break;
-        case 'freedom':
-          scores.adventurer += 1;
-          break;
-        case 'adventure':
-          scores.relaxer += 1;
-          break;
-        case 'social':
-          scores.relaxer += 1;
-          break;
-        case 'exploration':
-          scores.adventurer += 1;
-          break;
-        case 'activity':
-          scores.relaxer += 1;
-          break;
-        case 'material':
-          scores.free_spirit += 1;
-          break;
-        case 'documentation':
-          scores.free_spirit += 1;
-          break;
-        case 'budget':
-          scores.relaxer += 1;
-          break;
-        case 'timing':
           scores.culturalist += 1;
           break;
-        case 'culture':
+        case 'q2':
+          scores.culturalist += 1;
+          break;
+        case 'q3':
+          scores.culturalist += 1;
+          break;
+        case 'q4':
+          scores.culturalist += 1;
+          break;
+        case 'q5':
+          scores.adventurer += 1;
+          scores.relaxer += 1;
+          break;
+        case 'q6':
           scores.free_spirit += 1;
+          break;
+        case 'q7':
+          scores.relaxer += 1;
+          scores.free_spirit += 1;
+          break;
+        case 'q8':
+          scores.free_spirit += 0;
+          break;
+        case 'q9':
+          scores.relaxer += 1;
+          scores.free_spirit += 1;
+          break;
+        case 'q10':
+          scores.relaxer += 0;
+          break;
+        case 'q11':
+          scores.adventurer += 1;
+          scores.free_spirit += 1;
+          break;
+        case 'q12':
+          scores.culturalist += 1;
           break;
       }
     }

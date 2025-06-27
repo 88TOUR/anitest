@@ -31,7 +31,7 @@ const travelRecommendations = {
 
 const ResultPage = ({ result, onRestart }) => {
   const recommendations = travelRecommendations[result.type] || [];
-
+  const totalScore = Object.values(result.scores).reduce((sum, v) => sum + v, 0);
   return (
     <div className="result-page">
       <div className="result-container">
@@ -83,12 +83,12 @@ const ResultPage = ({ result, onRestart }) => {
                     <div 
                       className="score-fill"
                       style={{ 
-                        width: `${(score / 12) * 100}%`,
+                        width: `${(score / totalScore) * 100}%`,
                         backgroundColor: type === result.type ? result.color : '#e0e0e0'
                       }}
                     ></div>
                   </div>
-                  <span className="score-value">{Math.round((score / 12) * 100)}%</span>
+                  <span className="score-value">{Math.round((score / totalScore) * 100)}%</span>
                 </div>
               ))}
             </div>
