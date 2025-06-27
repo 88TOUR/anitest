@@ -54,39 +54,60 @@ margin-left: auto;
 margin-right: auto;
 }
 
-.recommendations {
-text-align: left;
-margin-bottom: 40px;
+/* 추천 여행지: 사진+텍스트 카드 그리드 */
+.recommend-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin: 40px 0;
+  justify-content: center;
 }
 
-.recommendations h3 {
-font-size: 1.5em;
-color: #2c3e50;
-margin-bottom: 20px;
-text-align: center;
-font-weight: 600;
+.recommend-card {
+  background: #f8f9fa;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(100, 149, 237, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px;
+  transition: box-shadow 0.2s;
 }
 
-.recommendation-list {
-list-style: none;
-padding: 0;
-max-width: 500px;
-margin: 0 auto;
+.recommend-card:hover {
+  box-shadow: 0 8px 32px rgba(100, 149, 237, 0.18);
 }
 
-.recommendation-item {
-background: #f8f9fa;
-padding: 15px 20px;
-margin-bottom: 10px;
-border-radius: 10px;
-border-left: 4px solid #74b9ff;
-transition: all 0.3s ease;
+.recommend-img-wrapper {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 12px;
 }
 
-.recommendation-item:hover {
-transform: translateX(5px);
-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.recommend-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
 }
+
+.recommend-info h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.1em;
+  color: #2c3e50;
+}
+
+.recommend-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.98em;
+}
+
 
 .score-breakdown {
 margin-bottom: 40px;
