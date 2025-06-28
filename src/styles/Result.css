@@ -104,8 +104,8 @@ margin-right: auto;
 }
 
 .recommend-img {
-  width: 48%;
-  height: 160px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 12px;
 }
