@@ -49,24 +49,29 @@ const ResultPage = ({ result, onRestart }) => {
           <p className="result-description">{result.description}</p>
           
           {/* 추천 여행지: 사진+텍스트 카드 */}
-          <div className="recommend-grid">
-            {recommendations.map((rec, idx) => (
-              <div className="recommend-card" key={idx}>
-                <div className="recommend-img-wrapper">
-                  <img
-                    src={rec.imageUrl}
-                    alt={rec.title}
-                    className="recommend-img"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="recommend-info">
-                  <h3>{rec.title}</h3>
-                  <p>{rec.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+<div className="recommend-grid">
+  {recommendations.map((rec, idx) => (
+    <div className="recommend-card" key={idx}>
+      <div className="recommend-img-wrapper">
+        <img
+          src={
+            rec.imageUrl.startsWith('/')
+              ? rec.imageUrl
+              : process.env.PUBLIC_URL + '/' + rec.imageUrl
+          }
+          alt={rec.title}
+          className="recommend-img"
+          loading="lazy"
+        />
+      </div>
+      <div className="recommend-info">
+        <h3>{rec.title}</h3>
+        <p>{rec.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
           
           <div className="score-breakdown">
             <h3>성향 분석</h3>
