@@ -53,12 +53,15 @@ const ResultPage = ({ result, onRestart }) => {
             {recommendations.map((rec, idx) => (
               <div className="recommend-card" key={idx}>
                 <div className="recommend-img-wrapper">
-                  <img
-                    src={rec.imageUrl}
-                    alt={rec.title}
-                    className="recommend-img"
-                    loading="lazy"
-                  />
+                  {rec.imageUrls.map((imgUrl, i) => (
+                   <img
+                        key={i}
+                        src={imgUrl}
+                        alt={rec.title}
+                        className="recommend-img"
+                        loading="lazy"
+                       />
+                      ))}
                 </div>
                 <div className="recommend-info">
                   <h3>{rec.title}</h3>
