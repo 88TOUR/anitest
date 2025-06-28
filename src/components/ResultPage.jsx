@@ -8,7 +8,7 @@ const travelRecommendations = {
     { title: "청운공원 & 윤동주 문학관", imageUrls: ["/adventurer2.jpg"], description: "시인의 숨결 따라 걷다 보면, 감성 충전 만렙! 조용하지만 강렬한 힐링 스팟이에요!" },
     { title: "'놋그릇가지런히' 전통카페", imageUrls: ["/adventurer3.jpg"], description: "고즈넉한 한옥과 반짝이는 놋그릇, 여기서만 느낄 수 있는 전통美 폭발!" },
     { title: "낙산공원, 청계천 산책", imageUrls: ["/adventurer4-2.jpg"], description: "성곽길 따라 걷고, 청계천 물소리에 귀 기울이면 도심 속 모험 끝판왕!" },
-  ],
+  ],   
   relaxer: [
     { title: "학고재", imageUrls: ["/relaxer1.jpg"], description: "예술 한가득! 감성 자극 전시장에서 사색에 잠겨봐요!" },
     { title: "더 마틴", imageUrls: ["/relaxer2.jpg"], description: "느좋분좋 카페에서 커피 한잔, 나만의 여유를 제대로 만끽!" },
