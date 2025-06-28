@@ -4,10 +4,10 @@ import '../styles/Result.css';
 // 여행유형별 추천 여행지(사진+텍스트) 예시 데이터
 const travelRecommendations = {
   adventurer: [
-    { title: "인왕산 등반", imageUrls: ["/adventurer1-1.jpg"], description: "서울 한복판에서 자연과 한몸! 산도 타고, 계곡물에 발 담그며 쿨하게 리프레시!" },
+    { title: "인왕산", imageUrls: ["/adventurer1-1.jpg"], description: "서울 한복판에서 자연과 한몸! 산도 타고, 계곡물에 발 담그며 쿨하게 리프레시!" },
     { title: "청운공원 & 윤동주 문학관", imageUrls: ["/adventurer2.jpg"], description: "시인의 숨결 따라 걷다 보면, 감성 충전 만렙! 조용하지만 강렬한 힐링 스팟이에요!" },
     { title: "'놋그릇가지런히' 전통카페", imageUrls: ["/adventurer3.jpg"], description: "고즈넉한 한옥과 반짝이는 놋그릇, 여기서만 느낄 수 있는 전통美 폭발!" },
-    { title: "낙산공원, 청계천 산책", imageUrls: ["/adventurer4-2.jpg"], description: "성곽길 따라 걷고, 청계천 물소리에 귀 기울이면 도심 속 모험 끝판왕!" },
+    { title: "낙산공원 & 청계천", imageUrls: ["/adventurer4-2.jpg"], description: "성곽길 따라 걷고, 청계천 물소리에 귀 기울이면 도심 속 모험 끝판왕!" },
   ],   
   relaxer: [
     { title: "학고재", imageUrls: ["/relaxer1.jpg"], description: "예술 한가득! 감성 자극 전시장에서 사색에 잠겨봐요!" },
