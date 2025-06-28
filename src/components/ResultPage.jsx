@@ -53,16 +53,17 @@ const ResultPage = ({ result, onRestart }) => {
             {recommendations.map((rec, idx) => (
               <div className="recommend-card" key={idx}>
                 <div className="recommend-img-wrapper">
-                  {rec.imageUrls.map((imgUrl, i) => (
-                   <img
-                        key={i}
-                        src={imgUrl}
-                        alt={rec.title}
-                        className="recommend-img"
-                        loading="lazy"
-                       />
-                      ))}
-                </div>
+  {Array.isArray(rec.imageUrls) && rec.imageUrls.map((imgUrl, i) => (
+    <img
+      key={i}
+      src={imgUrl}
+      alt={rec.title}
+      className="recommend-img"
+      loading="lazy"
+    />
+  ))}
+</div>
+
                 <div className="recommend-info">
                   <h3>{rec.title}</h3>
                   <p>{rec.description}</p>
