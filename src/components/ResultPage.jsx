@@ -4,28 +4,28 @@ import '../styles/Result.css';
 // 여행유형별 추천 여행지(사진+텍스트) 예시 데이터
 const travelRecommendations = {
   adventurer: [
-    { title: "그랜드 캐니언", imageUrl: "/adventurer1.jpg", description: "웅장한 자연과 함께하는 하이킹" },
-    { title: "마추픽추", imageUrl: "/adventurer2.jpg", description: "잉카 문명의 신비를 찾아서" },
-    { title: "아프리카 사파리", imageUrl: "/adventurer3.jpg", description: "야생동물과 함께하는 모험" },
-    { title: "알프스 트레킹", imageUrl: "/adventurer4.jpg", description: "유럽의 대자연을 만끽하는 트레킹" },
+    { title: "인왕산 등반", imageUrls: ["/adventurer1-1.jpg", "/adventurer1-2.jpg"], description: "서울 한복판에서 자연과 한몸! 산도 타고, 계곡물에 발 담그며 쿨하게 리프레시!" },
+    { title: "청운공원 & 윤동주 문학관", imageUrl: "/adventurer2.jpg", description: "시인의 숨결 따라 걷다 보면, 감성 충전 만렙! 조용하지만 강렬한 힐링 스팟이에요!" },
+    { title: "'놋그릇가지런히' 전통카페", imageUrl: "/adventurer3.jpg", description: "고즈넉한 한옥과 반짝이는 놋그릇, 여기서만 느낄 수 있는 전통美 폭발!" },
+    { title: "낙산공원, 청계천 산책", imageUrls: ["/adventurer4-1.jpg", "/adventurer4-2.jpg"], description: "성곽길 따라 걷고, 청계천 물소리에 귀 기울이면 도심 속 모험 끝판왕!" },
   ],
   relaxer: [
-    { title: "몰디브", imageUrl: "/relaxer1.jpg", description: "에메랄드빛 바다에서의 완벽한 휴식" },
-    { title: "발리", imageUrl: "/relaxer2.jpg", description: "힐링이 가득한 스파와 해변" },
-    { title: "하와이", imageUrl: "/relaxer3.jpg", description: "파도 소리와 함께하는 여유로운 시간" },
-    { title: "제주도", imageUrl: "/relaxer4.jpg", description: "국내 최고의 자연 휴양지" },
+    { title: "학고재", imageUrl: "/relaxer1.jpg", description: "예술 한가득! 감성 자극 전시장에서 사색에 잠겨봐요!" },
+    { title: "더 마틴", imageUrl: "/relaxer2.jpg", description: "느좋분좋 카페에서 커피 한잔, 나만의 여유를 제대로 만끽!" },
+    { title: "서촌 그 책방", imageUrls: ["/relaxer3-1.jpg", "/relaxer3-2.jpg"], description: "책과 예술이 한자리에! 조용한 공간에서 나만의 세계로 푹 빠져봐." },
+    { title: "에무시네마", imageUrl: "/relaxer4.jpg", description: "독립영화, 예술영화로 감성 폭발! 도심 속 작은 영화관에서 특별한 시간!" },
   ],
   culturalist: [
-    { title: "로마", imageUrl: "/culturalist1.jpg", description: "고대 유적과 예술의 도시" },
-    { title: "교토", imageUrl: "/culturalist2.jpg", description: "전통과 현대가 공존하는 일본의 문화 수도" },
-    { title: "파리", imageUrl: "/culturalist3.jpg", description: "미술관과 카페가 어우러진 낭만의 도시" },
-    { title: "경주", imageUrl: "/culturalist4.jpg", description: "천년 고도의 역사와 문화" },
+    { title: "다이나믹 메이즈", imageUrl: "/culturalist1.jpg", description: "미로 탈출, 머리와 몸이 다 바빠진다! 친구들과 짜릿하게 도전!" },
+    { title: "한옥랑솜", imageUrl: "/culturalist2.jpg", description: "한옥 감성+인생샷 명소! 분위기와 맛, 둘 다 잡았다!" },
+    { title: "박물관은 살아있다", imageUrl: "/culturalist3.jpg", description: "착시와 환상, 사진 찍는 재미가 폭발하는 체험형 박물관!" },
+    { title: "인사동 쌈지길", imageUrl: "/culturalist4.jpg", description: "전통과 트렌드가 만나는 골목에서, 쇼핑과 산책의 즐거움이 한가득!" },
   ],
   free_spirit: [
-    { title: "호주 로드트립", imageUrl: "/free_spirit1.jpg", description: "끝없는 자유와 드라이브" },
-    { title: "뉴질랜드 캠핑", imageUrl: "/free_spirit2.jpg", description: "대자연 속에서의 자유로운 캠핑" },
-    { title: "스페인 바르셀로나", imageUrl: "/free_spirit3.jpg", description: "거리 예술과 자유로운 분위기" },
-    { title: "태국 방콕", imageUrl: "/free_spirit4.jpg", description: "자유로운 여행자들의 천국" },
+    { title: "연남 무인공방", imageUrls: ["/free_spirit1-1.jpg", "/free_spirit1-2.jpg"], description: "직접 만들고, 직접 즐긴다! 취미+추억, 둘 다 챙기는 원데이 클래스!" },
+    { title: "언플러그드 홍대", imageUrl: "/free_spirit2.jpg", description: "홍대 인디밴드 라이브로 에너지 폭발! 음악과 함께 신나는 밤!" },
+    { title: "팀랩 라이프 (teamLab: LIFE)", imageUrl: "/free_spirit3.jpg", description: "빛과 예술의 환상적인 콜라보! 몰입감 200% 미디어 아트 전시!" },
+    { title: "경의선 책거리", imageUrl: "/free_spirit4.jpg", description: "책, 예술, 음악이 어우러진 산책길에서 감성 충전 제대로!" },
   ]
 };
 
