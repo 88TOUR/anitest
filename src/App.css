@@ -5,6 +5,13 @@ html, body, #app, #root {
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+body {
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'SamsungOne', Arial, sans-serif;
+}
+
+
 .App {
 text-align: center;
 }
