@@ -80,13 +80,13 @@
   animation: cloudMove1 22s linear infinite;
 }
 .cloud2 {
-  transform: rotate(5deg);
   width: 180px; height: 90px;
   top: 26%; right: 10%;
   animation: cloudMove2 28s linear infinite;
 }
 .cloud3 {
-  width: 90px; height: 45px;
+    transform: rotate(5deg);
+  width: 180px; height: 90px;
   bottom: 14%; left: 20%;
   animation: cloudMove3 18s linear infinite;
 }
