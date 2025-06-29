@@ -1,3 +1,5 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 html, body, #root {
 height: 100%;
 margin: 0;
@@ -6,7 +8,7 @@ box-sizing: border-box;
 }
 
 body {
-font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', Arial, sans-serif;
 line-height: 1.6;
 color: #333;
 background-color: #f8f9fa;
