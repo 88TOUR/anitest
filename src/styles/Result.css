@@ -53,6 +53,27 @@ margin-left: auto;
 margin-right: auto;
 }
 
+.myspot-block {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.myspot-title {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: 600;
+  /* "성향 분석"과 동일 스타일 */
+}
+
+.myspot-place {
+  font-size: 1.2em;
+  color: #1976d2;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
 /* 추천 여행지: 사진+텍스트 카드 그리드 */
 .recommend-grid {
   display: flex;
