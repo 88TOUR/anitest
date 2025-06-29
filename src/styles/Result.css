@@ -79,7 +79,7 @@ margin-right: auto;
 
 .myspot-title {
   font-size: 1.35em;
-  color: #1976d2;
+  color: #2c3e50;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 5px;
@@ -90,7 +90,7 @@ margin-right: auto;
   color: #222;
   font-weight: 800;
   letter-spacing: 2px;
-  background: linear-gradient(90deg, #74b9ff 30%, #a8edea 100%);
+  background: linear-gradient(45deg, #a8edea, #fed6e3);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 2px;
