@@ -1,7 +1,7 @@
 .main-page {
   min-height: 100vh;
   position: relative;
-  background: linear-gradient(135deg, #b3e0ff 0%, #e0f7fa 100%);
+  background: linear-gradient(135deg, #91cff8 0%, #e0f7fa 100%);
   overflow: hidden;
   display: flex;
   align-items: center;
