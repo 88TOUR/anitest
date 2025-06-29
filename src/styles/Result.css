@@ -55,23 +55,48 @@ margin-right: auto;
 
 .myspot-block {
   margin-bottom: 36px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.myspot-container {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(100, 149, 237, 0.12);
+  padding: 32px 32px 24px 32px;
+  min-width: 240px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInSpot 0.8s;
+}
+
+@keyframes fadeInSpot {
+  from { opacity: 0; transform: translateY(20px);}
+  to   { opacity: 1; transform: translateY(0);}
 }
 
 .myspot-title {
-  font-size: 1.5em;
-  color: #2c3e50;
-  margin-bottom: 8px;
-  font-weight: 600;
-  /* "성향 분석"과 동일 스타일 */
+  font-size: 1.35em;
+  color: #1976d2;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .myspot-place {
-  font-size: 1.2em;
-  color: #1976d2;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-size: 2em;
+  color: #222;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #74b9ff 30%, #a8edea 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 2px;
+  text-align: center;
 }
+
 
 
 /* 추천 여행지: 사진+텍스트 카드 그리드 */

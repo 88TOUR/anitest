@@ -58,9 +58,12 @@ const ResultPage = ({ result, onRestart }) => {
           
           {/* ====== 여기 추가 ====== */}
           <div className="myspot-block">
-            <h3 className="myspot-title">당신만의 여행 스팟</h3>
-            <div className="myspot-place">{mySpot[result.type]}</div>
+              <div className="myspot-container">
+              <h3 className="myspot-title">당신만의 여행 스팟</h3>
+              <div className="myspot-place">{mySpot[result.type]}</div>
+            </div>
           </div>
+
           {/* ===================== */}
 
           {/* 추천 여행지: 사진+텍스트 카드 */}
