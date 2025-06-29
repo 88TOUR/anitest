@@ -131,7 +131,7 @@ animation: smokeTrail 3s ease-in-out forwards;
     color: transparent;                   /* 표준 속성도 같이 써주면 좋음 */
 
   /* 텍스트 그림자 */
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 }
 
 .dot {
@@ -140,7 +140,7 @@ animation: smokeTrail 3s ease-in-out forwards;
   height: 12px;
   background: linear-gradient(135deg, #4a90e2, #357ABD);
   border-radius: 50%;
-  box-shadow: 0 0 8px rgba(53, 122, 189, 0.8);
+  box-shadow: 0 0 2px rgba(53, 122, 189, 0.8);
   margin-left: 5px;
   animation: dotPulse 1.2s infinite;
   vertical-align: middle;
