@@ -60,7 +60,7 @@ margin-right: auto;
 }
 
 .myspot-container {
-  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  background: #f8f9fa;
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(100, 149, 237, 0.12);
   padding: 32px 32px 24px 32px;
