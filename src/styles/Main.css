@@ -92,7 +92,7 @@
 }
 .cloud4 {
   width: 140px; height: 70px;
-  bottom: 50%; right: 15%;
+  bottom: 40%; right: 15%;
   animation: cloudMove4 24s linear infinite;
 }
 .cloud-img {
