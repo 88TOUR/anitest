@@ -11,7 +11,7 @@ const MainPage = ({ onStart }) => (
       <img src="/cloud2.png" alt="구름2" className="cloud-img" />
     </div>
     <div className="cloud cloud4">
-      <img src="/cloud4.png" alt="구름4" className="cloud-img" />
+      <img src="/cloud1.png" alt="구름4" className="cloud-img" />
     </div>
 
     {/* 중앙 컨텐츠 */}
