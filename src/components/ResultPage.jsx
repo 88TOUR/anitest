@@ -118,10 +118,41 @@ const ResultPage = ({ result, onRestart }) => {
           <button className="restart-button" onClick={onRestart}>
             다시 하기
           </button>
+
+          <div className="insta-promo-wrapper">
+            <div className="insta-promo-container">
+              <a
+                href="https://www.instagram.com/88tour_official"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="insta-link"
+              >
+                <div className="insta-icon">
+                  📷
+                </div>
+                <div className="insta-content">
+                  <h4 className="insta-title">더 많은 여행 정보를 원한다면?</h4>
+                  <p className="insta-text">
+                    <span className="insta-id">@88tour_official</span>을 팔로우하고<br />
+                    특별한 여행 소식을 받아보세요!
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          {/* ===== 2. 이벤트 이미지 (화면 전체 너비) ===== */}
+          <div className="event-image-section">
+            <img
+              src="/gift.png"
+              alt="88투어 이벤트"
+              className="event-full-image"
+            />
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
+      
 export default ResultPage;
