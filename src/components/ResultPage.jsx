@@ -131,10 +131,10 @@ const ResultPage = ({ result, onRestart }) => {
                   <img src="/insta_logo.png" alt="로고" className="mini-logo" />
                 </div>
                 <div className="insta-content">
-                  <h4 className="insta-title">더 많은 여행 정보를 원한다면?</h4>
+                  <h4 className="insta-title">대학생 연합 기획동아리, 88</h4>
                   <p className="insta-text">
-                    <span className="insta-id">@88tour_official</span>을 팔로우하고<br />
-                    특별한 여행 소식을 받아보세요!
+                    <span className="insta-id">@88___eightyeight</span><br />
+                    삶에 __를 더하다.
                   </p>
                 </div>
               </a>
