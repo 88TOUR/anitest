@@ -274,6 +274,14 @@ box-shadow: 0 15px 35px rgba(168, 237, 234, 0.6);
   font-size: 1.8em;
   flex-shrink: 0;
   box-shadow: 0 4px 15px rgba(168, 237, 234, 0.3);
+  overflow: hidden; /* 이미지를 동그랗게 자름 */
+}
+
+.mini-logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
 }
 
 .insta-content {

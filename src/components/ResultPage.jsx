@@ -122,13 +122,13 @@ const ResultPage = ({ result, onRestart }) => {
           <div className="insta-promo-wrapper">
             <div className="insta-promo-container">
               <a
-                href="https://www.instagram.com/88tour_official"
+                href="https://www.instagram.com/88___eightyeight/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="insta-link"
               >
                 <div className="insta-icon">
-                  📷
+                  <img src="/insta_logo.png" alt="로고" className="mini-logo" />
                 </div>
                 <div className="insta-content">
                   <h4 className="insta-title">더 많은 여행 정보를 원한다면?</h4>
