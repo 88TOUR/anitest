@@ -81,7 +81,7 @@
 }
 .cloud2 {
   width: 180px; height: 90px;
-  top: 26%; right: 10%;
+  top: 40%; right: 10%;
   animation: cloudMove2 28s linear infinite;
 }
 .cloud3 {
