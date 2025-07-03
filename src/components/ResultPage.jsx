@@ -2,8 +2,17 @@ import React from 'react';
 import '../styles/Result.css';
 
 // 유형별 "당신만의 여행 스팟" 장소명 데이터
+// 유형별 대표 이미지 경로
+const typeImages = {
+  adventurer: "/type_adventurer.jpg",
+  relaxer: "/type_relaxer.jpg",
+  culturalist: "/type_culturalist.jpg",
+  free_spirit: "/type_free_spirit.jpg",
+};
+
+
 const mySpot = {
-  adventurer: "홍대",
+  adventurer: "종로구",
   relaxer: "서촌",
   culturalist: "인사동",
   free_spirit: "연남동"
@@ -46,12 +55,14 @@ const ResultPage = ({ result, onRestart }) => {
         <div className="result-content">
           <div className="result-header">
             <h1 className="result-title">{result.name}</h1>
-            <div 
-              className="result-icon"
-              style={{ backgroundColor: result.color }}
-            >
-              ✈️
+            <div className="result-icon" style={{ backgroundColor: result.color }}>
+              <img
+                src={typeImages[result.type]}
+                alt={result.type}
+                className="result-type-img"
+              />
             </div>
+
           </div>
           
           <p className="result-description">{result.description}</p>
