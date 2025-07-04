@@ -183,9 +183,6 @@ export const analyzeResults = (answers) => {
           scores.relaxer += 1;
           scores.free_spirit += 1;
           break;
-        case 'q2':
-          scores.relaxer += 0.5;
-          break;
         case 'q3':
           scores.relaxer += 1;
           scores.free_spirit += 1;
@@ -208,10 +205,6 @@ export const analyzeResults = (answers) => {
         case 'q8':
           scores.relaxer += 0;
           break;
-        case 'q9':
-          scores.adventurer += 1;
-          scores.culturalist += 1;
-          break;
         case 'q10':
           scores.relaxer += 1;
           break;
@@ -229,9 +222,6 @@ export const analyzeResults = (answers) => {
           scores.adventurer += 1;
           scores.culturalist += 1;
           break;
-        case 'q2':
-          scores.culturalist += 0.5;
-          break;
         case 'q3':
           scores.culturalist += 0.5;
           break;
@@ -247,13 +237,6 @@ export const analyzeResults = (answers) => {
           break;
         case 'q7':
           scores.relaxer += 1;
-          scores.free_spirit += 1;
-          break;
-        case 'q8':
-          scores.free_spirit += 0;
-          break;
-        case 'q9':
-          scores.relaxer += 0.5;
           scores.free_spirit += 1;
           break;
         case 'q10':
