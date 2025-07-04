@@ -14,19 +14,6 @@ export const questions = [
   },
   {
     id: 2,
-    question: "해외로 여행을 갈 때",
-    optionA: {
-      text: "아는 만큼 보인다. 사전 조사하기",
-      image: "/optionA2.png"
-    },
-    optionB: {
-      text: "맨땅에 헤딩하기",
-      image: "/optionB2.png"
-    },
-    category: "q2"
-  },
-  {
-    id: 3,
     question: "여행지에서 먼 거리를 이동할 때",
     optionA: {
       text: "편리한 현지대중교통 이용",
@@ -39,7 +26,7 @@ export const questions = [
     category: "q3"
   },
   {
-    id: 4,
+    id: 3,
     question: "친구가 당장 내일 여행 떠나자고 한다면?",
     optionA: {
       text: "내일...? 늦잠자고 쉬려고 했는데...",
@@ -52,7 +39,7 @@ export const questions = [
     category: "q4"
   },
   {
-    id: 5,
+    id: 4,
     question: "여행을 누구랑 가지?",
     optionA: {
       text: "동기들과 다 같이 여행",
@@ -65,7 +52,7 @@ export const questions = [
     category: "q5"
   },
   {
-    id: 6,
+    id: 5,
     question: "친구랑 여행계획을 짜는데 뭔가 심상치 않다...",
     optionA: {
       text: "엑셀로 1분단위 계획짜는 친구",
@@ -78,7 +65,7 @@ export const questions = [
     category: "q6"
   },
   {
-    id: 7,
+    id: 6,
     question: "숙소가 애매하네...",
     optionA: {
       text: "그냥 찜질방에서 자자",
@@ -91,33 +78,7 @@ export const questions = [
     category: "q7"
   },
   {
-    id: 8,
-    question: "한 달 살기 요즘 유행하네.. 나도 해볼까?",
-    optionA: {
-      text: "제대로 즐기려면 최소 2주는 가야지!",
-      image: "/optionA8.png"
-    },
-    optionB: {
-      text: "그래도 한 달은 좀.. 짧고 굵게 다녀오자!",
-      image: "/optionB8.png"
-    },
-    category: "q8"
-  },
-  {
-    id: 9,
-    question: "여행가서 친구와 싸웠을 때",
-    optionA: {
-      text: "지금 끝장 보자.",
-      image: "/optionA9.png"
-    },
-    optionB: {
-      text: "아몰랑 나중에 생각해~",
-      image: "/optionB9.png"
-    },
-    category: "q9"
-  },
-  {
-    id: 10,
+    id: 7,
     question: "연차내고 신나게 여행을 왔는데, 직장상사에게 전화가 왔다.",
     optionA: {
       text: "모른 척한다",
@@ -130,7 +91,7 @@ export const questions = [
     category: "q10"
   },
   {
-    id: 11,
+    id: 8,
     question: "여행을 간다면",
     optionA: {
       text: "여유.. 휴식.. 낭만.. 여행은 이거지..",
@@ -143,7 +104,7 @@ export const questions = [
     category: "q11"
   },
   {
-    id: 12,
+    id: 9,
     question: "여행이 모두 끝나고 내 방 침대에 누워있을 때.. 드는 생각은?",
     optionA: {
       text: "너무 행복하다.. 나중에 또 가야지~",
