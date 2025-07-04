@@ -53,13 +53,13 @@ export const questions = [
   },
   {
     id: 5,
-    question: "친구랑 여행계획을 짜는데 뭔가 심상치 않다...",
+    question: "둘 중 한 명과 여행을 가야한다면?",
     optionA: {
       text: "엑셀로 1분단위 계획짜는 친구",
       image: "/optionA6.png"
     },
     optionB: {
-      text: "뉸뉴난나 그냥 가는거지 뭐~",
+      text: "뉸뉴난나~ 그냥 가서 생각하자는 친구",
       image: "/optionB6.png"
     },
     category: "q6"
