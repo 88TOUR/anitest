@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Question.css';
 
 const QuestionPage = ({ 
@@ -9,6 +9,18 @@ const QuestionPage = ({
   onPrevious, 
   canGoBack 
 }) => {
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  const handleOptionSelect = (option) => {
+    setSelectedOption(option);
+  };
+
+  const handleNext = () => {
+    if (selectedOption) {
+      onAnswer(selectedOption);
+    }
+  };
+
   return (
     <div className="question-page">
       <div className="question-container">
@@ -32,8 +44,8 @@ const QuestionPage = ({
           
           <div className="options">
             <button 
-              className="option-button option-a"
-              onClick={() => onAnswer('A')}
+              className={`option-button option-a ${selectedOption === 'A' ? 'selected' : ''}`}
+              onClick={() => handleOptionSelect('A')}
             >
               <img
                 src={question.optionA.image}
@@ -44,8 +56,8 @@ const QuestionPage = ({
             </button>
             
             <button 
-              className="option-button option-b"
-              onClick={() => onAnswer('B')}
+              className={`option-button option-b ${selectedOption === 'B' ? 'selected' : ''}`}
+              onClick={() => handleOptionSelect('B')}
             >
               <img
                 src={question.optionB.image}
@@ -64,6 +76,13 @@ const QuestionPage = ({
               이전 질문
             </button>
           )}
+          <button 
+            className={`nav-button next-button ${!selectedOption ? 'disabled' : ''}`}
+            onClick={handleNext}
+            disabled={!selectedOption}
+          >
+            다음
+          </button>
         </div>
       </div>
     </div>
