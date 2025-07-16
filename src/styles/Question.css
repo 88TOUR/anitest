@@ -102,9 +102,9 @@ box-shadow: 0 10px 25px rgba(116, 185, 255, 0.3);
 }
 
 .option-img {
-  width:250px;
-  height:250px;
-  object-fit: contain;
+  width:200px;
+  height:200px;
+  object-fit: cover;
   margin-right: 20px;
   flex-shrink: 0;
 }
