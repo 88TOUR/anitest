@@ -105,13 +105,13 @@ box-shadow: 0 10px 25px rgba(116, 185, 255, 0.3);
   width:140px;
   height:140px;
   object-fit: cover;
-  margin-right: 20px;
+  margin-bottom: 10px;
   flex-shrink: 0;
 }
 
 .option-text {
-font-size: 1.5em;
-font-weight: 540;
+font-size: 1.2em;
+font-weight: 500;
 color: #2c3e50;
 line-height: 1.5;
 }
