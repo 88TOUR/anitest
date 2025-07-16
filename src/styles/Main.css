@@ -49,6 +49,15 @@
   line-height: 1.6;
 }
 
+.main-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: 'Pretendard', sans-serif;
+  text-align: center;
+}
+
 .start-button {
   background: #1976d2;
   color: #fff;

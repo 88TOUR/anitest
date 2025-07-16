@@ -21,6 +21,7 @@ const MainPage = ({ onStart }) => (
         alt="여행 로고"
         className="main-logo"
       />
+      <p className="main-subtitle">문화 기획 동아리, 88</p>
       <h1 className="main-title">나의 여행 성향 테스트</h1>
       <p className="main-description">
         나의 여행 유형을 통해<br />
