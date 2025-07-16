@@ -1,27 +1,28 @@
 .question-page {
-  height: 100vh; /* vh 기준 고정 높이 */
+  height: 100vh;
   background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box; /* 패딩 포함 계산 */
-  overflow: hidden; /* 전체 페이지 스크롤 제거 */
+  box-sizing: border-box;
+  overflow: hidden; /* 페이지 스크롤 제거 */
 }
 
 .question-container {
   max-width: 800px;
   width: 100%;
-  height: 100%; /* 부모 영역에 맞춤 */
+  height: 100%;
   background: white;
   border-radius: 20px;
-  padding: 20px; /* 패딩 줄임 (40px → 20px) */
+  padding: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   animation: slideIn 0.6s ease-out;
   box-sizing: border-box;
-  overflow-y: auto; /* 내부 스크롤 허용 */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* 내부 스크롤 제거 */
 }
-
 
 .progress-container {
 display: flex;
@@ -82,24 +83,28 @@ line-height: 1.4;
 }
 
 .options {
-display: flex;
-flex-direction: column;
-gap: 20px;
-max-width: 600px;
-margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1; /* 남은 영역 차지 */
+  overflow: hidden;
 }
 
+/* 옵션 버튼 스타일 */
 .option-button {
-display: flex;
-align-items: center;
-background: white;
-border: 3px solid #e9ecef;
-border-radius: 15px;
-padding: 25px 30px;
-cursor: pointer;
-transition: all 0.3s ease;
-text-align: left;
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 3px solid #e9ecef;
+  border-radius: 15px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  overflow: hidden; /* 이미지 잘림 처리 */
+  flex: 1;
 }
+
 
 .option-button:hover {
 border-color: #74b9ff;
@@ -107,10 +112,11 @@ transform: translateY(-2px);
 box-shadow: 0 10px 25px rgba(116, 185, 255, 0.3);
 }
 
+/* 이미지 자르기 (자르되 크기 유지) */
 .option-img {
-  width:250px;
-  height:250px;
-  object-fit: contain;
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* 잘림 */
   margin-right: 20px;
   flex-shrink: 0;
 }
@@ -200,23 +206,4 @@ to {
 opacity: 1;
 transform: translateX(0);
 }
-}
-
-@media (max-width: 600px) {
-  .question-container {
-    padding: 16px;
-  }
-
-  .option-img {
-    width: 140px;
-    height: 140px;
-  }
-
-  .option-text {
-    font-size: 1.1em;
-  }
-
-  .question-title {
-    font-size: 1.5em;
-  }
 }
