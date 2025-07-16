@@ -26,7 +26,7 @@
 .main-logo {
   width: 160px;
   height: 160px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   filter: drop-shadow(0 4px 16px rgba(0,0,0,0.13));
   transform: rotate(10deg);
 }
@@ -51,7 +51,7 @@
 
 .main-subtitle {
   font-size: 18px;
-  color: #555;
+  color: #5ba4ed;
   font-weight: 500;
   margin-bottom: 5px;
   font-family: 'Pretendard', sans-serif;
